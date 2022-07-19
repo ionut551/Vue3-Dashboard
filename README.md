@@ -1,4 +1,4 @@
-# my-vue3
+# Vue3-dashboard
 
 ## Project setup
 ```
