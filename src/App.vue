@@ -1,19 +1,39 @@
 <template>
-  <!-- <Sidenav /> -->
-  <img alt="Vue logo" src="./assets/logo.png">
+  <sidenav :custom_class="color" :class="[isRTL ? 'fixed-end' : 'fixed-start']" v-if="showSidenav" />
+  <img alt="Vue logo" src="./assets/image/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js App" />
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
-// import Sidenav from './components/Sidenav'
+import Sidenav from './components/Sidenav'
+import { mapMutations, mapState } from "vuex";
+
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
-    // Sidenav
-  }
+    Sidenav
+  },
+  methods: {
+    ...mapMutations(["toggleConfigurator", "navbarMinimize"])
+  },
+  computed: {
+    ...mapState([
+      "isRTL",
+      "color",
+      "isAbsolute",
+      "isNavFixed",
+      "navbarFixed",
+      "absolute",
+      "showSidenav",
+      "showNavbar",
+      "showFooter",
+      "showConfig",
+      "hideConfigButton"
+    ])
+  },
 }
 </script>
 
