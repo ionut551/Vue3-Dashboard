@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-Thin.ttf);
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-Regular.ttf);
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-Medium.ttf);
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-SemiBold.ttf);
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-Bold.ttf);
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(fonts/Inter-ExtraBold.ttf);
+  font-display: swap;
+  font-weight: 800;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inter {
+  font-family: "Inter", sans-serif !important;
+}
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+button {
+  font-family: "Inter", sans-serif;
+}
+
+.ant-popover-inner-content {
+  padding: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+  box-shadow: inset 7px 10px 12px 0px #f0f0f0;
+}
