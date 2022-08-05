@@ -12,6 +12,6 @@ export default [
   {
     id: 'profile',
     name: 'Profile',
-    linke: '/profile',
+    link: '/profile',
   }
 ]

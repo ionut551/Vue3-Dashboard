@@ -1,5 +1,8 @@
-import { createRouter, createWebHistory } from "vue-router";
-import HelloWorld from "../components/HelloWorld.vue";
+import { createRouter, createWebHistory } from "vue-router"
+import HelloWorld from "../views/HelloWorld.vue"
+import Dashboard from "../views/Dashboard.vue"
+import Tables from "../views/Tables.vue"
+import Profile from "../views/Profile.vue"
 
 const routes = [
   {
@@ -11,6 +14,22 @@ const routes = [
     path: "/helloWorld",
     name: "HelloWorld",
     component: HelloWorld,
+  },
+  {
+    path: "/dashboard",
+    name: "Dashboard",
+    component: Dashboard,
+  },
+
+  {
+    path: "/tables",
+    name: "Tables",
+    component: Tables,
+  },
+  {
+    path: "/profile",
+    name: "Profile",
+    component: Profile,
   },
 ];
 
